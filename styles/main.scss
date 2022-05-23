@@ -1,0 +1,48 @@
+            @import "base";
+            @import "spacing";
+            @import "colors";
+            @import "typography";
+            @import "sizes";
+            .hero {
+                display: flex;
+                justify-content: center;
+                .container {
+                    width: 990px;
+                    .logo {
+                        color: $white;
+                        font-size: $extrasmall;
+                        letter-spacing: 1px;
+                        cursor: pointer;
+                        span {
+                            color: $orange;
+                        }
+                    }
+                }
+                background-image: url("../images/image-hero.jpg");
+                height: 800px;
+                header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-top: $spacing-md;
+                }
+                nav {
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        width: 650px;
+                        margin: 0;
+                        padding: 0;
+                        gap: $spacing-md;
+                    }
+                    li {
+                        a {
+                            color: $white;
+                        }
+                    }
+                }
+                .btn {
+                    background-color: $orange;
+                    color: $white;
+                }
+            }
